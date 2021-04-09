@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url(./fonts/LexendDeca-Regular.ttf);  
+}
+
+@font-face {
+  font-family: BigShoulders;
+  src: url(./fonts/BigShouldersDisplay-Medium.ttf)
+}
+
+body {
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-family: BigShoulders;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-top: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 9px 9px 0 0;
+  width: 288px;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.suvs {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(184, 100%, 22%);
+  width: 288px;;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.luxury {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 9px 9px;
+  width: 288px;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+img {
+  width: 60px;
+  height: 36px;
+  margin-top: 45px;
+}
+
+p {
+  display: block;
+  line-height: 1.6em;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 40px;
+}
+
+button {
+  width: 137px;
+  height: 47px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 50px 50px 50px 50px;
+  font-family: Lexend;
+  border: none;
+}
+
+.sedans button {
+  margin-top: 68px;
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs button {
+  margin-top: 68px;
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  margin-top: 68px;
+  color: hsl(179, 100%, 13%);
+}
