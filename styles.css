@@ -1,7 +1,23 @@
+/*    Table of contents:
+
+        1. Global styles and Typography
+    
+        2. Layout
+    
+        3. Components 
+        
+        4. Media Queries    */
+
+
+
+/* ===== Global Styles, Typography ===== */
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 @font-face {
@@ -19,6 +35,15 @@ body {
   font-size: 14px;
   font-weight: lighter;
   background-color: hsl(0, 0%, 95%);
+  width: auto;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(0, 0%, 95%);
 }
 
 h1 {
@@ -26,47 +51,6 @@ h1 {
   font-weight: 700;
   color: hsl(0, 0%, 95%);
   margin-top: 40px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  color: hsl(0, 0%, 95%);
-}
-
-.sedans {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(31, 77%, 52%);
-  border-radius: 9px 9px 0 0;
-  width: 288px;
-  height: 468px;
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.suvs {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(184, 100%, 22%);
-  width: 288px;;
-  height: 468px;
-  padding-left: 45px;
-  padding-right: 45px;
-}
-
-.luxury {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(179, 100%, 13%);
-  border-radius: 0 0 9px 9px;
-  width: 288px;
-  height: 468px;
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 img {
@@ -79,8 +63,59 @@ p {
   display: block;
   line-height: 1.6em;
   color: hsla(0, 0%, 100%, 0.75);
-  margin-top: 40px;
+  margin-top: 32px;
 }
+
+
+/*  ===== Layout ===== */
+
+
+.sedans {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 9px 9px 0 0;
+  width: 288px;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+  position: relative;
+}
+
+.suvs {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(184, 100%, 22%);
+  width: 288px;;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+  position: relative;
+}
+
+.luxury {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 9px 9px;
+  width: 288px;
+  height: 468px;
+  padding-left: 45px;
+  padding-right: 45px;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+
+
+/*  ===== Components ===== */
+
+
 
 button {
   width: 137px;
@@ -89,19 +124,70 @@ button {
   border-radius: 50px 50px 50px 50px;
   font-family: Lexend;
   border: none;
+  cursor: pointer;
 }
 
 .sedans button {
   margin-top: 68px;
   color: hsl(31, 77%, 52%);
+  position: absolute;
+  left: 45px;
+  bottom: 45px;
 }
 
 .suvs button {
   margin-top: 68px;
   color: hsl(184, 100%, 22%);
+  position: absolute;
+  left: 45px;
+  bottom: 45px;
 }
 
 .luxury button {
   margin-top: 68px;
   color: hsl(179, 100%, 13%);
+  position: absolute;
+  left: 45px;
+  bottom: 45px;
+}
+
+.sedans button:hover,
+.sedans button:focus {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 2px solid white;
+}
+
+.suvs button:hover,
+.suvs button:focus {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: 2px solid white;
+}
+
+.luxury button:hover,
+.luxury button:focus {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border: 2px solid white;
+}
+
+
+/*  =====  Media  Queries ===== */
+
+
+@media (min-width: 800px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
 }
