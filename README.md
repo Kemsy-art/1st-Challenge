@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-[Solution screenshot] https://github.com/Kemsy-art/1st-Challenge/blob/master/screenshot.png
+- [Solution screenshot] https://github.com/Kemsy-art/1st-Challenge/blob/master/screenshot.png
 
 
 
