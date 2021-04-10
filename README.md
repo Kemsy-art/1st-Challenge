@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Live URL](https://kemsy-art.github.io/1st-Challenge/)
 
 
 ## My process
